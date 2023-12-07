@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mini Coding Project RevoU</title>
+  </head>
+  <body>
+    <header>
+      <div class="judul">
+        <img id="revou" src="image/revou.png" alt="logo">
+        <h2>Mini Coding Project</h2>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#luasSegitiga">Hitung Luas Segitiga</a></li>
+          <li><a href="#kelilingSegitiga">Hitung Keliling Segitiga</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div id="luasSegitiga" class="container">
+        <div class="form-container">
+          <h2>Hitung Luas Segitiga</h2>
+          <img src="image/1.jpg" alt="rumus-luas-segitiga">
+          <label class="sisi" for="alas">Alas :</label>
+          <input type="number" id="alas" placeholder="Masukkan Nilai Alas" />
+
+          <label class="sisi" for="height">Tinggi :</label>
+          <input type="number" id="tinggi" placeholder="Masukkan Nilai Tinggi" />
+
+          <button onclick="hitungLuas()">Hitung Luas</button>
+          <button class="reset" onclick="resetLuasForm()">Reset</button>
+
+          <p id="result">Luas Segitiga = <span id="luas">-</span></p>
+        </div>
+      </div>
+
+      <div id="kelilingSegitiga" class="container">
+        <div class="form-container">
+          <h2>Hitung Keliling Segitiga</h2>
+          <img src="image/2.jpg" alt="rumus-keliling-segitiga">
+          <div>
+            <label class="sisi" for="sisiA">Sisi A :</label>
+            <input type="number" id="sisiA" placeholder="Masukkan Panjang Sisi A" />
+          </div>
+          <div>
+            <label class="sisi" for="sisiB">Sisi B :</label>
+            <input type="number" id="sisiB" placeholder="Masukkan Panjang Sisi B" />
+          </div>
+          <div>
+            <label class="sisi" for="sisiC">Sisi C :</label>
+            <input type="number" id="sisiC" placeholder="Masukkan Panjang Sisi C" />
+          </div>
+          <button onclick="hitungKeliling()">Hitung Keliling</button>
+          <button class="reset" onclick="resetKelilingForm()"">Reset</button>
+          <p id="resultKeliling">Keliling = <span id="keliling">-</span></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 - Cahya Diningrat</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
